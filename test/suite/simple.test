@@ -1,0 +1,3 @@
+register tokenizers/tinysegmenter
+
+tokenize TokenTinySegmenter "今日は雨です。"

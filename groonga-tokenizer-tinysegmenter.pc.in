@@ -1,0 +1,5 @@
+plugin_name=tokenizers/tinysegmenter
+
+Name: groonga-tokenizer-tinysegmenter
+Description: Tinysegmenter tokenizer plugin for Groonga
+Version: @VERSION@
