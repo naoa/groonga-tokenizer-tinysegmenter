@@ -4,7 +4,14 @@
 
 ### TokenTinySegmenter
 
-[TinySegmenter](http://chasen.org/~taku/software/TinySegmenter/)用の学習モデルを自作するための[TinySegmenterMaker](https://github.com/shogo82148/TinySegmenterMaker)を使って生成したC++用のライブラリ``tinysegmenter.hpp``を使って分かち書きをします。TinySegmenterは、機械学習のみを使って分かち書きを行います。TinySegmenterは、形態素解析用の辞書を持たないため、サイズを非常にコンパクトに抑えることができます。学習モデルは、オリジナルのTinySegmenterと同様のものを用いています。この学習モデルは日本語の新聞記事向けに学習されています。TinySegmenterMakerを使えば、分かち書き済みテキストを用意するだけで簡単に自作の学習モデルを作ることができます。``tokenizers/tinysegmenter.hpp``を置き換えてソースをビルドすれば自作の学習モデルを利用することができます。
+[TinySegmenter](http://chasen.org/~taku/software/TinySegmenter/)用の学習モデルを自作するための[TinySegmenterMaker](https://github.com/shogo82148/TinySegmenterMaker)を使って生成したC++用のライブラリ``tinysegmenter.hpp``を使って分かち書きをします。
+
+TinySegmenterは、機械学習のみを使って分かち書きを行います。  
+TinySegmenterは、形態素解析用の辞書を持たないため、サイズを非常にコンパクトに抑えることができます。  
+学習モデルは、オリジナルのTinySegmenterと同様のものを用いています。  
+この学習モデルは日本語の新聞記事向けに学習されています。  
+TinySegmenterMakerを使えば、分かち書き済みテキストを用意するだけで簡単に自作の学習モデルを作ることができます。  
+``tokenizers/tinysegmenter.hpp``を置き換えてソースをビルドすれば自作の学習モデルを利用することができます。
 
 ```
 > tokenize TokenTinySegmenter "今日は雨です。"
@@ -166,13 +173,13 @@ Rroonga:
 LGPL 2.1. See COPYING for details.
 This program is the same license as Groonga.
 
-This program includes the original TinySegmenter model.
+This program includes the original TinySegmenter model.  
 TinySegmenter is licensed under New BSD License. 
 
 http://chasen.org/~taku/software/TinySegmenter/
 
-// (c) 2008 Taku Kudo <taku@chasen.org>
-// TinySegmenter is freely distributable under the terms of a new BSD licence.
+// (c) 2008 Taku Kudo <taku@chasen.org>  
+// TinySegmenter is freely distributable under the terms of a new BSD licence.  
 // For details, see http://chasen.org/~taku/software/TinySegmenter/LICENCE.txt
 
 ``tokenizers/tinysegmenter.hpp`` is created by TinySegmenterMaker.
