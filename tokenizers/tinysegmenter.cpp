@@ -82,7 +82,7 @@ tinysegmenter_init(grn_ctx *ctx, int nargs, grn_obj **args, grn_user_data *user_
 
 static grn_obj *
 tinysegmenter_next(grn_ctx *ctx, GNUC_UNUSED int nargs, GNUC_UNUSED grn_obj **args,
-               grn_user_data *user_data)
+                   grn_user_data *user_data)
 {
   grn_tinysegmenter_tokenizer *tokenizer =
     static_cast<grn_tinysegmenter_tokenizer *>(user_data->ptr);
@@ -105,7 +105,7 @@ tinysegmenter_next(grn_ctx *ctx, GNUC_UNUSED int nargs, GNUC_UNUSED grn_obj **ar
 
 static grn_obj *
 tinysegmenter_fin(grn_ctx *ctx, GNUC_UNUSED int nargs, GNUC_UNUSED grn_obj **args,
-              grn_user_data *user_data)
+                  grn_user_data *user_data)
 {
   grn_tinysegmenter_tokenizer *tokenizer =
     static_cast<grn_tinysegmenter_tokenizer *>(user_data->ptr);
@@ -135,7 +135,9 @@ GRN_PLUGIN_REGISTER(grn_ctx *ctx)
   return rc;
 }
 
-grn_rc GRN_PLUGIN_FIN(grn_ctx *ctx) {
+grn_rc
+GRN_PLUGIN_FIN(grn_ctx *ctx)
+{
   return GRN_SUCCESS;
 }
 
