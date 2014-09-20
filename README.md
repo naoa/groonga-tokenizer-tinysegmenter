@@ -72,6 +72,12 @@ Install ``groonga-tokenizer-tinysegmenter`` package:
 % sudo yum localinstall -y http://packages.createfield.com/fedora/20/groonga-tokenizer-tinysegmenter-1.0.0-1.fc20.x86_64.rpm
 ```
 
+* Fedora 21
+
+```
+% sudo yum localinstall -y http://packages.createfield.com/fedora/21/groonga-tokenizer-tinysegmenter-1.0.0-1.fc21.x86_64.rpm
+```
+
 ### Debian GNU/LINUX
 
 * wheezy
