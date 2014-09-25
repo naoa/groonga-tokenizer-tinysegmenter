@@ -34,6 +34,8 @@ using namespace std;
 #  define GNUC_UNUSED
 #endif
 
+#define GRN_STRING_ENABLE_NORMALIZER_FILTER (0x01<<5)
+
 typedef struct {
   grn_tokenizer_token token;
   grn_tokenizer_query *query;
@@ -46,7 +48,7 @@ static grn_obj *
 tinysegmenter_init(grn_ctx *ctx, int nargs, grn_obj **args, grn_user_data *user_data)
 {
   grn_tokenizer_query *query;
-  unsigned int normalize_flags = 0;
+  unsigned int normalize_flags = GRN_STRING_ENABLE_NORMALIZER_FILTER;
   const char *normalized;
   unsigned int normalized_length_in_bytes;
   grn_tinysegmenter_tokenizer *tokenizer;
